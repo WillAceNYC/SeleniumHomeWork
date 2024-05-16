@@ -28,7 +28,7 @@ public class Calendar {
         driver.findElement(By.name("leaveList[calFromDate]")).click();
         WebElement month = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
         Select selectMonth = new Select(month);
-        selectMonth.selectByIndex(5);
+        selectMonth.selectByIndex(5git pull origin main);
         WebElement year = driver.findElement(By.xpath("//select[@class='ui-datepicker-year']"));
         Select selectYear = new Select(year);
         selectYear.selectByVisibleText("1992");
@@ -40,5 +40,5 @@ public class Calendar {
             }
     }
 
-}git pull origin 
+}
 
