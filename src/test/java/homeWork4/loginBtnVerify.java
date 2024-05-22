@@ -23,9 +23,15 @@ public class loginBtnVerify {
     }
 
     @Test
-    public void verifyBtn() {
+    public void loginBtnIsDisplayed() {
         WebElement button = driver.findElement(By.xpath("//input[@id='btnLogin']"));
         boolean displayStatus = button.isDisplayed();
         Assert.assertTrue(displayStatus);
+    }
+    @Test
+    public void loginBtnIsEnabled(){
+        WebElement button = driver.findElement(By.xpath("//input[@id='btnLogin']"));
+        boolean enableStatus = button.isEnabled();
+        Assert.assertTrue(enableStatus);
     }
 }
