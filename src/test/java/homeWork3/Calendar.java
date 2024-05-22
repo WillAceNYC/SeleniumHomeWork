@@ -28,10 +28,12 @@ public class Calendar {
         driver.findElement(By.name("leaveList[calFromDate]")).click();
         WebElement month = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
         Select selectMonth = new Select(month);
-        selectMonth.selectByIndex(5git pull origin main);
+        selectMonth.selectByIndex(5);
+
         WebElement year = driver.findElement(By.xpath("//select[@class='ui-datepicker-year']"));
         Select selectYear = new Select(year);
         selectYear.selectByVisibleText("1992");
+
         List<WebElement> days = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td"));
         for (WebElement day : days)
             if (day.getText().equals("18")) {
